@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment Ajax Puppies</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1 class="text-center">The AJAX Puppy Shelter</h1>
+
+      <h3>Register a new puppy</h3>
+
+      <form>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text" name="name" value="">
+        </div>
+
+        <div class="form-group">
+          <label for="breed">Breed</label>
+          <select id="breeds" class="form-control" name="breed_id">
+            <option default>-- select breed --</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-default">REGISTER PUPPY</button>
+
+      </form>
+
+      <h3>Our Puppies</h3>
+
+      <button id="refresh-puppies" type="button" class="btn btn-link">Refresh puppies list</button>
+
+      <ul id="puppies">
+      </ul>
+
+    </div>
+
+  </body>
+</html>
